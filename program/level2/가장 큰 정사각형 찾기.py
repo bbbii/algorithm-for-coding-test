@@ -7,4 +7,4 @@ def solution(board):
                 dp[i][j] = min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]) + 1
                 if dp[i][j] > global_max:
                     global_max = dp[i][j]
-    return global_max ** 2
+    return global_max ** 2 
